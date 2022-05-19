@@ -5,9 +5,9 @@ export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     titleTemplate: "%s - Nuxt js UI Kit",
-    title: "NuxtJs UI kit | Free UI kit built with Vuetifyy",
+    title: "POLT | Pet-Owner-License-Test",
     htmlAttrs: {
-      lang: "en"
+      lang: "kr"
     },
     meta: [
       { charset: "utf-8" },

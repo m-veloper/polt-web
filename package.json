@@ -1,8 +1,8 @@
 {
-  "name": "NextKit-Free-Nuxt-Js-UI-Kit",
+  "name": "POLT",
   "version": "1.0.0",
   "private": true,
-  "description": "NextUI - Free Nuxt Js UI Kit",
+  "description": "Pet-Owner-License-Test",
   "author": "Wrappixel",
   "scripts": {
     "dev": "nuxt",

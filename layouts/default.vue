@@ -13,7 +13,7 @@
 export default {
   head() {
     return {
-      title: "NuxtJs UI kit | Free UI kit built with Vuetify",
+      title: "Polt | Pet Owner License Test",
       meta: [
         {
           hid: "description",

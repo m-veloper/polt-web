@@ -19,7 +19,7 @@
         >
           <ul class="navbar-nav">
             <li class="nav-item" text>
-              <n-link class="nav-link" nuxt to="/"> Custom Components </n-link>
+              <n-link class="nav-link" nuxt to="/"> Test 시작하기 </n-link>
             </li>
             <li class="nav-item" text>
               <n-link class="nav-link" nuxt to="/basic-components">
@@ -35,7 +35,7 @@
                 href="/"
                 elevation="0"
               >
-                Download Free
+                로그인
               </v-btn>
             </li>
           </ul>

@@ -40,10 +40,10 @@
           </div>
         </v-col>
         <v-col cols="12" md="5" lg="6">
-          <v-img
-            :src="require('@/assets/images/landingpage/banner-img.png')"
-            alt="banner"
-          />
+<!--          <v-img-->
+<!--            :src="require('@/assets/images/landingpage/banner-img.png')"-->
+<!--            alt="banner"-->
+<!--          />-->
         </v-col>
       </v-row>
 

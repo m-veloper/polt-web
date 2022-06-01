@@ -10,9 +10,9 @@
             <h1 class="banner-title font-weight-bold white--text">
               나는 과연 반려동물을 키울 자격을 갖추고있을까?
             </h1>
-            <h4 class="banner-subtitle white--text font-weight-regular">
-              Free Vuetify UI Kit with Lots of Ready to Use Sections
-            </h4>
+<!--            <h4 class="banner-subtitle white&#45;&#45;text font-weight-regular">-->
+<!--              Free Vuetify UI Kit with Lots of Ready to Use Sections-->
+<!--            </h4>-->
             <div class="mt-16 pt-2">
               <v-btn
                 color="error"

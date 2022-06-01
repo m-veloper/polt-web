@@ -1,10 +1,11 @@
 <template>
   <div class="logo">
     <NLink to="/">
-      <v-img
-        :src="require('@/assets/images/logos/white-text.png')"
-        alt="logo"
-      />
+<!--      <v-img-->
+<!--        :src="require('@/assets/images/logos/white-text.png')"-->
+<!--        alt="logo"-->
+<!--      />-->
+      <h1 class="gugi-font">Polt</h1>
     </NLink>
   </div>
 </template>

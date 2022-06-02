@@ -23,5 +23,11 @@ export default {
 <style lang="scss">
 .logo a {
   display: flex;
+  text-decoration: none;
+}
+
+.logo a h1{
+    color: #FFFFFF;
+    font-size: 45px;
 }
 </style>

@@ -4,7 +4,7 @@
 <!--      <v-img-->
 <!--        :src="require('@/assets/images/logos/white-text.png')"-->
 <!--        alt="logo"-->
-<!--      />-->ddddd
+<!--      />-->
       <h1 class="gugi-font">Polt</h1>
     </NLink>
   </div>

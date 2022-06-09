@@ -20,40 +20,41 @@
         </v-row>
 
         <div class="mt-16 pt-2 text-center">
-          <div style="display: flex">
-            <n-link class="nav-link ButtonGeneral DefaultHomeHead__btn ButtonGeneral__white button3d" nuxt to="/ddddd">
-              <span>1</span>
+          <div style="display: flex; justify-content: center">
+            <n-link class="nav-link ButtonGeneral DefaultHomeHead__btn ButtonGeneral__white button3d" nuxt to="/">
+              <span>반려견 테스트</span>
             </n-link>
             <n-link class="nav-link ButtonGeneral DefaultHomeHead__btn ButtonGeneral__white button3d" nuxt to="/">
-              <span>2</span>
+              <span>반려묘 테스트</span>
             </n-link>
           </div>
 
 <!--          <a class="ButtonGeneral DefaultHomeHead__btn ButtonGeneral__white button3d">-->
 <!--            <span>1</span>-->
 <!--          </a>-->
-          <v-btn
-                  color="error"
-                  class="mr-0 mr-md-8 mb-5 mb-md-0 btn-custom-md"
-                  nuxt
-                  large
-                  target="_blank"
-                  href="/"
-                  elevation="0"
-          >
-            Download Free
-          </v-btn>
-          <v-btn
-                  nuxt
-                  large
-                  to="/coming-soon"
-                  class="btn-custom-md"
-                  outlined
-                  color="error"
-                  elevation="0"
-          >
-            Upgrade to Pro
-          </v-btn>
+
+<!--          <v-btn-->
+<!--                  color="error"-->
+<!--                  class="mr-0 mr-md-8 mb-5 mb-md-0 btn-custom-md"-->
+<!--                  nuxt-->
+<!--                  large-->
+<!--                  target="_blank"-->
+<!--                  href="/"-->
+<!--                  elevation="0"-->
+<!--          >-->
+<!--            Download Free-->
+<!--          </v-btn>-->
+<!--          <v-btn-->
+<!--                  nuxt-->
+<!--                  large-->
+<!--                  to="/coming-soon"-->
+<!--                  class="btn-custom-md"-->
+<!--                  outlined-->
+<!--                  color="error"-->
+<!--                  elevation="0"-->
+<!--          >-->
+<!--            Upgrade to Pro-->
+<!--          </v-btn>-->
         </div>
       </v-container>
     </div>
@@ -117,6 +118,7 @@ export default {
   }
 
   .ButtonGeneral span {
+    color: #ffffff;
     -webkit-transition: transform .1s ease-out;
     transition: transform .1s ease-out
   }
@@ -131,7 +133,7 @@ export default {
   }
 
   .ButtonGeneral__white:before {
-    background-color: #fff;
+    background-color: #ff4d7e;
   }
 
 </style>

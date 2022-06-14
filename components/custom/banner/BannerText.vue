@@ -73,8 +73,8 @@ export default {
 <style>
   .button3d {
     width: 200px;
-    /*margin: auto;*/
-    /*font-family: Highlight Font ko,Noto Sans KR,sans-serif;*/
+    height: 50px;
+
   }
 
   .ButtonGeneral * {
@@ -90,14 +90,15 @@ export default {
     align-items: center;
     justify-content: center;
     padding: 1.3rem 2.8rem;
-    font-size: 1.6rem;
-    font-weight: 500;
+    font-size: 1rem;
+    font-weight: bold;
     border: none;
     border-radius: 1.2rem;
     outline: transparent;
     -webkit-box-shadow: 0 .5rem 1.5rem 0 rgba(0, 0, 0, .1);
     box-shadow: 0 .5rem 1.5rem 0 rgba(0, 0, 0, .1);
-    cursor: pointer
+    margin: 0 15px;
+    text-decoration: none;
   }
 
   .ButtonGeneral:before {

@@ -4,13 +4,14 @@
     Banner
     ----------------------------------------------- -->
     <Banner />
+    <BannerText />
     <!-- -----------------------------------------------
     ./ Banner
     ----------------------------------------------- -->
     <!-- -----------------------------------------------
     All Components
     ----------------------------------------------- -->
-    <AllCustomComponents />
+<!--    <AllCustomComponents />-->
     <!-- -----------------------------------------------
     ./ All Components
     ----------------------------------------------- -->
@@ -44,9 +45,9 @@ export default {
   },
   components: {
     Banner: () => import("@/components/shared/lp-banner/Banner"),
+    BannerText: () => import("@/components/custom/banner/BannerText"),
     ComingSoon: () => import("@/components/shared/coming-soon/ComingSoon"),
-    AllCustomComponents: () =>
-      import("@/components/custom/AllCustomComponents"),
+    AllCustomComponents: () => import("@/components/custom/AllCustomComponents"),
   },
 };
 </script>

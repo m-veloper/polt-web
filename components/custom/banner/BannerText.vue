@@ -21,7 +21,7 @@
 
         <div class="mt-16 pt-2 text-center">
           <div style="display: flex; justify-content: center">
-            <n-link class="nav-link ButtonGeneral DefaultHomeHead__btn ButtonGeneral__white button3d" nuxt to="/">
+            <n-link nuxt to="/dog-test-components" class="nav-link ButtonGeneral DefaultHomeHead__btn ButtonGeneral__white button3d">
               <span>반려견 테스트</span>
             </n-link>
             <n-link class="nav-link ButtonGeneral DefaultHomeHead__btn ButtonGeneral__white button3d" nuxt to="/">

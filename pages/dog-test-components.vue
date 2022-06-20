@@ -11,7 +11,7 @@ export default {
       title: "Dog Test Components",
       meta: [
         {
-          hid: "description",
+          hid: "de scription",
           name: "Next Ui Kit",
           content: "Next Ui Kit is the best way",
         },

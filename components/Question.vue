@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>{{page}}. {{question}}</h1>
-    <Button
+    <TestButton
       v-for="(item, index) in answers"
       styleType="blue"
       :key="index"

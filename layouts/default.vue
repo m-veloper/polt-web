@@ -2,9 +2,9 @@
   <v-app dark>
     <!--v-if="$route.name!=='login'"-->
     <Header />
-    <v-main>
-      <nuxt />
-    </v-main>
+      <v-main>
+        <nuxt />
+      </v-main>
     <Footer />
   </v-app>
 </template>

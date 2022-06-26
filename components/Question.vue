@@ -2,48 +2,54 @@
   <div>
     <h1>{{page}}. {{question}}</h1>
     <TestButton
-      v-for="(item, index) in answers"
-      styleType="blue"
-      :key="index"
-      :text="item.text"
-      :clickEvent="() => {
-        clickButton(item)
-      }"
+    v-for="(item, index) in answers" 
+    styleType="blue" 
+    :key="index" 
+    :text="item.text"
+    :clickEvent="() => {
+      clickButton(item)
+    }"
     />
-    <Progress />
+    <Progress />  
   </div>
 </template>
 
 <script>
 export default {
   computed: {
-    page(){
-      return this.$store.state.page;
+    page() {
+      return this.$store.state.page
     },
-    question(){
+
+    question() {
       return this.$store.state.questions[this.$store.state.page - 1].q
-    },
-    answers(){
+    }, 
+    answers() {
       return this.$store.state.questions[this.$store.state.page - 1].a
     }
   },
   methods: {
-    clickButton(item){
-      this.$store.dispatch('clickButton',item.value)
-      if(this.page === this.$store.state.questions.length){
-        const result = this.$store.state.result
-        this.$router.push({
-          name: 'result-mbti',
-          params: {
-            mbti: `${result.e ? "e" : "i"}${result.s ? "s" : "n"}${result.f ? "f" : "t"}${result.j ? "j" : "p"}`
-          }})
-      }
+    clickButton(item) {
+      this.$store.dispatch('clickButton', item.value);
+      // 마지막 질문일 때만 라우터 이동
+      if(this.page === this.$store.state.questions.length + 1) {
+        const result = this.$store.state.result;
 
+        this.$router.push({
+          name: 'result-mbti', 
+          // route돼서 result/params 이 params 안에 내용이 담기게 된다
+          params: {
+            mbti: `${result.e > 1 ? "e" : "i"}${result.n > 1 ? "n" : "s"}${result.f > 1 ? "f" : "t"}${result.j > 1 ? "j" : "p"}`
+          }
+        })
+      }
     }
-  },
+  }
 }
 </script>
 
-<style >
-
+<style>
+  h1 {
+    font-size: 1.5rem;
+  }
 </style>

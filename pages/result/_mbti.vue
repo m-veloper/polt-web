@@ -1,17 +1,30 @@
 <template>
   <div>
-    <main>
-      <img :src="result[mbti].img" :alt="result[mbti].title">
-      <div class="contain">
-        <h1>{{result[mbti].title}}</h1>
-        <!-- v-html 은 보안상의 문제, XSS 와 같은 문제가 있을 수 있다. 
-          그러므로 반드시 사용자가 컨트롤하거나 악용할 수 있는 문제에는 사용해선 안 된다.
-          오직 개발자가 의도한 값만 표출해줄 때 사용해주면 된다. -->
-        <p v-html="result[mbti].description"></p>
-      </div>
-        <TestButton text="다시 테스트하기!" :clickEvent="resetPage"/>
-      
-    </main>
+    <div class="banner-wrapper">
+      <v-container>
+        <!-- -----------------------------------------------
+              Start Banner
+          ----------------------------------------------- -->
+        <v-row justify="center">
+          <v-col cols="12" md="7" lg="6" class="d-flex align-center">
+            <div class="text-center text-md-left">
+              <main>
+                <!--      <img :src="result[mbti].img" :alt="result[mbti].title">-->
+                <div class="contain">
+                  <h1>{{result[mbti].title}}</h1>
+                  <!-- v-html 은 보안상의 문제, XSS 와 같은 문제가 있을 수 있다.
+                    그러므로 반드시 사용자가 컨트롤하거나 악용할 수 있는 문제에는 사용해선 안 된다.
+                    오직 개발자가 의도한 값만 표출해줄 때 사용해주면 된다. -->
+                  <p v-html="result[mbti].description"></p>
+                </div>
+                <TestButton text="다시 테스트하기!" :clickEvent="resetPage"/>
+
+              </main>
+            </div>
+          </v-col>
+        </v-row>
+      </v-container>
+    </div>
   </div>
 </template>
 
@@ -625,7 +638,8 @@ export default {
   },
   created() {
     this.mbti = this.$route.params.mbti;
-
+    console.log(this.mbti);
+    console.log(this.$router);
     if (this.result[this.$route.params.mbti] === undefined) {
       this.$router.push({name: "index"})
     }

@@ -11,8 +11,9 @@
 
                         <!-- 인트로 페이지 -->
                         <main v-if="page===0">
-                          <img src="/poster.jpeg" alt="해리포터" class="poster">
-                          <h1>나와 닮은 해리포터 캐릭터 찾기</h1>
+<!--                          <img src="/poster.jpeg" alt="해리포터" class="poster">-->
+<!--                          <h1>나와 닮은 해리포터 캐릭터 찾기</h1>-->
+                          <h1>찾기</h1>
                           <TestButton text="Test start" :clickEvent="startTest"/>
                         </main>
 

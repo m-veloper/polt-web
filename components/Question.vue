@@ -1,18 +1,19 @@
 <template>
   <div>
     <!-- 질문 -->
-    <h1>{{page}}. {{question}}</h1>
-
-    <!-- 답 선택 -->
-    <TestButton
-    v-for="(item, index) in answers" 
-    styleType="blue" 
-    :key="index" 
-    :text="item.text"
-    :clickEvent="() => {
+    <h1 style="margin-bottom: 30px;">{{page}}. {{question}}</h1>
+    <div style="display: flex">
+      <!-- 답 선택 -->
+      <TestButton
+              v-for="(item, index) in answers"
+              styleType="blue"
+              :key="index"
+              :text="item.text"
+              :clickEvent="() => {
       clickButton(item)
     }"
-    />
+      />
+    </div>
 
     <!-- 진행바 -->
     <Progress />  

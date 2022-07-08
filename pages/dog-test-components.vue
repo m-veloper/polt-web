@@ -1,6 +1,6 @@
 <template>
   <div>
-      <div class="banner-wrapper">
+      <div class="base-section">
           <v-container>
               <!-- -----------------------------------------------
                     Start Banner
@@ -72,10 +72,17 @@ export default {
 
 <style>
     .main-title, .sub-title {
-        color: #ffffff;
+        /*color: #ffffff;*/
     }
 
     .sub-title{
       margin-bottom: 50px;
+    }
+
+    .base-section{
+        padding: 20px 0 20px;
+        min-height: 600px;
+        display: flex;
+        align-items: center;
     }
 </style>

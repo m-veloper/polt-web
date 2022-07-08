@@ -1,9 +1,9 @@
 <template>
-  <div>
+  <div class="top-bar">
     <!-- -----------------------------------------------
           Start Header
     ----------------------------------------------- -->
-    <v-app-bar app absolute class="app-header" flat elevate-on-scroll>
+    <v-app-bar color="deep-purple accent-4" app absolute class="app-header" flat elevate-on-scroll>
       <v-container class="py-0 fill-height">
         <!-- Logo -->
         <Logo />
@@ -67,3 +67,11 @@ export default {
   }
 };
 </script>
+
+<style>
+  .top-bar{
+    background: #fdbfa8;
+    height: 100px;
+  }
+</style>
+

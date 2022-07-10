@@ -285,11 +285,6 @@ export const state = {
     }
   ],
 
-
-
-
-
-
   result: {
     e: 0,
     i: 0,

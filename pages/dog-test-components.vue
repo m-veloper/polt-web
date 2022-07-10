@@ -18,7 +18,7 @@
                         </main>
 
                         <!-- 질문 페이지 -->
-                        <main class="question" v-else-if="page <= 12">
+                        <main class="question" v-else-if="page <= 20">
                           <Question />
                         </main>
 

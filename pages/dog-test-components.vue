@@ -12,8 +12,10 @@
                         <!-- 인트로 페이지 -->
                         <main v-if="page===0">
 <!--                          <img src="/poster.jpeg" alt="해리포터" class="poster">-->
-                          <h1 class="main-title">반려견 주인 자격 테스트</h1>
+<!--                          <h1 class="main-title">반려견 주인 자격 테스트</h1>-->
                           <h5 class="sub-title">Pet Owner License Test</h5>
+                          <h5 class="sub-title">총 20개 문항으로 되어있어요~</h5>
+                          <h5 class="sub-title">생명을 다루는 문제이니 진지하게 테스트 부탁드립니다.</h5>
                           <TestButton text="Test start" :clickEvent="startTest"/>
                         </main>
 

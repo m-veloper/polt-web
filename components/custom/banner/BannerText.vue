@@ -24,37 +24,11 @@
             <n-link nuxt to="/dog-test-components" class="nav-link ButtonGeneral DefaultHomeHead__btn ButtonGeneral__white button3d">
               <span>반려견 테스트</span>
             </n-link>
-            <n-link class="nav-link ButtonGeneral DefaultHomeHead__btn ButtonGeneral__white button3d" nuxt to="/">
-              <span>반려묘 테스트</span>
-            </n-link>
+<!--            <n-link class="nav-link ButtonGeneral DefaultHomeHead__btn ButtonGeneral__white button3d" nuxt to="/">-->
+<!--              <span>반려묘 테스트</span>-->
+<!--            </n-link>-->
           </div>
 
-<!--          <a class="ButtonGeneral DefaultHomeHead__btn ButtonGeneral__white button3d">-->
-<!--            <span>1</span>-->
-<!--          </a>-->
-
-<!--          <v-btn-->
-<!--                  color="error"-->
-<!--                  class="mr-0 mr-md-8 mb-5 mb-md-0 btn-custom-md"-->
-<!--                  nuxt-->
-<!--                  large-->
-<!--                  target="_blank"-->
-<!--                  href="/"-->
-<!--                  elevation="0"-->
-<!--          >-->
-<!--            Download Free-->
-<!--          </v-btn>-->
-<!--          <v-btn-->
-<!--                  nuxt-->
-<!--                  large-->
-<!--                  to="/coming-soon"-->
-<!--                  class="btn-custom-md"-->
-<!--                  outlined-->
-<!--                  color="error"-->
-<!--                  elevation="0"-->
-<!--          >-->
-<!--            Upgrade to Pro-->
-<!--          </v-btn>-->
         </div>
       </v-container>
     </div>
@@ -72,9 +46,8 @@ export default {
 
 <style>
   .button3d {
-    width: 200px;
-    height: 50px;
-
+    width: 300px;
+    height: 65px;
   }
 
   .ButtonGeneral * {

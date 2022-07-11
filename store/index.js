@@ -7,17 +7,17 @@ export const state = {
           "나의 건강 상태는 어떤지?",
       a: [
         {
-          text: "감기정도만 걸리고 양호한 편이다.",
-          value: 5
+          text: `감기정도만 걸리고<br />양호한 편이다.`,
+          value: "A"
         },
         {
-          text: "잔병치레가 있지만 보통인 편이다.",
-          value: 3
+          text: `잔병치레가 있지만<br /> 보통인 편이다.`,
+          value: "B"
         }
         ,
         {
-          text: "자주 아프고, 약한 편이다.",
-          value: 1
+          text: `자주 아프고, 약한 편이다.`,
+          value: "C"
         }
       ]
     },
@@ -26,15 +26,15 @@ export const state = {
       a: [
         {
           text: "1~2번 정도 있다.",
-          value: 5
+          value: "A"
         },
         {
           text: "3~4번 정도 있다.",
-          value: 3
+          value: "B"
         },
         {
           text: "5번 이상으로 많다.",
-          value: 1
+          value: "C"
         }
       ]
     },
@@ -44,16 +44,16 @@ export const state = {
       a: [
         {
           text: "가족이 같이 살거나, 언제든지 보살펴줄 지인이 있다.",
-          value: 5
+          value: "A"
         },
         {
-          text: "없지만 부탁할 사람을 찾을 수 있다.",
-          value: 3
+          text: `없지만 부탁할 사람을<br />찾을 수 있다.`,
+          value: "B"
         }
         ,
         {
-          text: "혼자 살아서 외출 시 반려견 혼자 있어야 한다.",
-          value: 1
+          text: `혼자 살아서 외출 시<br />반려견 혼자 있어야 한다.`,
+          value: "C"
         }
       ]
     },
@@ -63,15 +63,15 @@ export const state = {
       a: [
         {
           text: "없다.",
-          value: 5
+          value: "A"
         },
         {
           text: "있지만 심각하지 않음",
-          value: 3
+          value: "B"
         },
         {
           text: "있다.",
-          value: 1
+          value: "C"
         }
       ]
     },
@@ -81,15 +81,15 @@ export const state = {
       a: [
         {
           text: "충분한 여유가 있다.",
-          value: 5
+          value: "A"
         },
         {
-          text: "여유롭진 않지만, 감당할 수 있는 수준이다.",
-          value: 3
+          text: `여유롭진 않지만,<br />감당할 수 있는 수준이다.`,
+          value: "B"
         },
         {
-          text: "힘들지만, 감당할 수 있을지 잘 모르겠다.",
-          value: 1
+          text: `힘들지만, 감당할 수<br />있을지 잘 모르겠다.`,
+          value: "C"
         }
       ]
     },
@@ -98,16 +98,16 @@ export const state = {
         "원룸처럼 작은 집이 아닌 같이 살 수 있는 넓은 환경에서 거주하고 있는지?",
       a: [
         {
-          text: "마당은 없어도 충분히 넓은 집이다.",
-          value: 5
+          text: `마당은 없어도 충분히<br />넓은 집이다.`,
+          value: "A"
         },
         {
-          text: "넓진 않지만 같이 지내기 적당한 수준이다.",
-          value: 3
+          text: `넓진 않지만 같이 지내기<br />적당한 수준이다.`,
+          value: "B"
         },
         {
           text: "작은 원룸 수준이다.",
-          value: 1
+          value: "C"
         }
       ]
     },
@@ -117,15 +117,15 @@ export const state = {
       a: [
         {
           text: "가까운 거리에 있다.",
-          value: 5
+          value: "A"
         },
         {
-          text: "무리 없이 갈 수있는 적당한 거리에 있다.",
-          value: 3
+          text: `무리 없이 갈 수있는<br />적당한 거리에 있다.`,
+          value: "B"
         },
         {
-          text: "거주지와 거리가 좀 있는 곳에 있다.",
-          value: 1
+          text: `거주지와 거리가<br />좀 있는 곳에 있다.`,
+          value: "C"
         }
       ]
     },
@@ -135,15 +135,15 @@ export const state = {
       a: [
         {
           text: "잘 알고있다.",
-          value: 5
+          value: "A"
         },
         {
           text: "대충 알고있다.",
-          value: 3
+          value: "B"
         },
         {
           text: "잘 모른다.",
-          value: 1
+          value: "C"
         }
       ]
     },
@@ -153,15 +153,15 @@ export const state = {
       a: [
         {
           text: "무조건 키울 수 있다.",
-          value: 5
+          value: "A"
         },
         {
           text: "키울 수 있을거 같다.",
-          value: 3
+          value: "B"
         },
         {
           text: "잘 모르겠다.",
-          value: 1
+          value: "C"
         }
       ]
     },
@@ -171,15 +171,15 @@ export const state = {
       a: [
         {
           text: "매일 가능",
-          value: 5
+          value: "A"
         },
         {
           text: "최소 주 3회 정도 가능",
-          value: 3
+          value: "B"
         },
         {
           text: "주 1~2회 정도 가능",
-          value: 1
+          value: "C"
         }
       ]
     },
@@ -188,15 +188,15 @@ export const state = {
       a: [
         {
           text: "개인 차량이 있다.",
-          value: 5
+          value: "A"
         },
         {
-          text: "개인차는 없지만 렌트는 가능하다.",
-          value: 3
+          text: `개인차는 없지만<br />렌트는 가능하다.`,
+          value: "B"
         },
         {
-          text: "개인차도 없고, 렌트해 본 적도 없다.",
-          value: 1
+          text: `개인차도 없고<br />렌트해 본 적도 없다.`,
+          value: "C"
         }
       ]
     },
@@ -205,15 +205,15 @@ export const state = {
       a: [
         {
           text: "잘할 수 있다.",
-          value: 5
+          value: "A"
         },
         {
-          text: "잘 모르지만 충분히 노력할 수 있다.",
-          value: 3
+          text: `잘 모르지만 충분히<br />노력할 수 있다.`,
+          value: "B"
         },
         {
           text: "좋은 사료 면 충분할 거 같다.",
-          value: 1
+          value: "C"
         }
       ]
     },
@@ -222,15 +222,15 @@ export const state = {
       a: [
         {
           text: "잘 알고 있다.",
-          value: 5
+          value: "A"
         },
         {
           text: "몇몇 종류는 알고 있다.",
-          value: 3
+          value: "B"
         },
         {
-          text: "먹으면 안되는 게 있는지 처음 알았다.",
-          value: 1
+          text: `먹으면 안되는 게 있는지<br />처음 알았다.`,
+          value: "C"
         }
       ]
     },
@@ -239,15 +239,15 @@ export const state = {
       a: [
         {
           text: "잘 알고 있다.",
-          value: 5
+          value: "A"
         },
         {
-          text: "잘 몰랐지만 잘 먹일 자신이 있다.",
-          value: 3
+          text: `잘 몰랐지만<br />잘 먹일 자신이 있다.`,
+          value: "B"
         },
         {
-          text: "구충제를 먹어야 하는지 처음 알았다.",
-          value: 1
+          text: `구충제를 먹어야 하는지<br />처음 알았다.`,
+          value: "C"
         }
       ]
     },
@@ -256,15 +256,15 @@ export const state = {
       a: [
         {
           text: "잘 알고 있다.",
-          value: 5
+          value: "A"
         },
         {
-          text: "잘 모르지만 열심히 공부할 생각이다.",
-          value: 3
+          text: `잘 모르지만 열심히<br />공부할 생각이다.`,
+          value: "B"
         },
         {
           text: "전혀 알지 못한다.",
-          value: 1
+          value: "C"
         }
       ]
     },
@@ -273,15 +273,15 @@ export const state = {
       a: [
         {
           text: "잘 알고 있다.",
-          value: 5
+          value: "A"
         },
         {
-          text: "잘 모르지만 열심히 공부할 생각이다.",
-          value: 3
+          text: `잘 모르지만 열심히<br />공부할 생각이다.`,
+          value: "B"
         },
         {
           text: "전혀 알지 못한다.",
-          value: 1
+          value: "C"
         }
       ]
     },
@@ -289,16 +289,16 @@ export const state = {
       q: "사회화 시기에 만날 다른 견주가 있는지?",
       a: [
         {
-          text: "커뮤니티, 카페 등 잘 알고 있다.",
-          value: 5
+          text: `커뮤니티, 카페 등<br />잘 알고 있다.`,
+          value: "A"
         },
         {
-          text: "이 전쟁을 승리로 이끈 주역 중의 한 명",
-          value: 3
+          text: `없지만 사회화를 위해<br />노력할 생각이다`,
+          value: "B"
         },
         {
-          text: "산책만 시키면 잘 된다고 생각한다.",
-          value: 1
+          text: `산책만 잘 시키면<br />된다고 생각한다.`,
+          value: "C"
         }
       ]
     },
@@ -306,16 +306,16 @@ export const state = {
       q: "사회화 시기에 다양한 경험을 시켜줄 각오가 되어있는지?",
       a: [
         {
-          text: "주인으로써 충분한 능력이 있다.",
-          value: 5
+          text: `주인으로써 충분한<br />능력이 있다.`,
+          value: "A"
         },
         {
           text: "최대한 노력할 것이다.",
-          value: 3
+          value: "B"
         },
         {
-          text: "시간이 나면 최대한 해줄 생각이다.",
-          value: 1
+          text: `시간이 나면 최대한<br />해줄 생각이다.`,
+          value: "C"
         }
       ]
     },
@@ -323,16 +323,16 @@ export const state = {
       q: "사회화 시기에 하루 6시간 이상 떨어지지 않을 수 있는지?",
       a: [
         {
-          text: "가족이 같이 살아서 전혀 문제가 없이 가능하다.",
-          value: 5
+          text: `가족이 같이 살아서<br />전혀 문제가 없이 가능하다.`,
+          value: "A"
         },
         {
-          text: "현실적으로 힘들지만 여러 서비스를 이용하여 혼자 있지 않게 하겠다.",
-          value: 3
+          text: `현실적으로 힘들지만<br />여러 서비스를 이용하여<br />혼자 있지 않게 하겠다.`,
+          value: "B"
         },
         {
-          text: "출근 등 개인적인 사정이 생기면 불가능할 거 같다.",
-          value: 1
+          text: `출근 등 개인적인 사정이<br />생기면 불가능할 거 같다.`,
+          value: "C"
         }
       ]
     },
@@ -341,29 +341,24 @@ export const state = {
       a: [
         {
           text: "의향도 있고 능력도 있다.",
-          value: 5
+          value: "A"
         },
         {
-          text: "최대한 문제를 해결하려고 노력해 보겠다.",
-          value: 3
+          text: `최대한 문제를 해결하려고<br /> 노력해 보겠다.`,
+          value: "B"
         },
         {
-          text: "비용도 비싸고 시간이 부족할 거 같아 힘들 거 같다.",
-          value: 1
+          text: `비용도 비싸고 시간이<br />부족할 거 같아 힘들 거 같다.`,
+          value: "C"
         }
       ]
     }
   ],
 
   result: {
-    e: 0,
-    i: 0,
-    s: 0,
-    n: 0,
-    t: 0,
-    f: 0,
-    p: 0,
-    j: 0
+    A: 0,
+    B: 0,
+    C: 0
   }
 };
 
@@ -387,14 +382,9 @@ export const mutations = {
   PAGE_RESET(state) {
     state.page = 0;
     state.result = {
-      e: 0,
-      i: 0,
-      s: 0,
-      n: 0,
-      t: 0,
-      f: 0,
-      p: 0,
-      j: 0
+      A: 0,
+      B: 0,
+      C: 0
     };
   }
 };

@@ -63,23 +63,18 @@ export default {
     },
     makeResultMst(totalScore){
       let grade = '';
-      switch(totalScore) { // 범위 사용 시에는 switch에 true 사용
-        case (totalScore <= 100 || totalScore >= 80): // 점수 : 80 ~ 100
-          console.log("점수 : 80 ~ 100 : " + totalScore + "점");
-          return grade = "A";
-          break;
-        case (totalScore <= 79 || totalScore >= 60): // 점수 : 60 ~ 79
-          console.log("점수 : 60 ~ 79 : " + totalScore + "점");
-          return grade = "B";
-          break;
-        case (totalScore <= 59 || totalScore >= 30): // 점수 : 30 ~ 59
-          console.log("점수 : 30 ~ 59 : " + totalScore + "점");
-          return grade = "C";
-          break;
-        default:
-          console.log("점수 : 29 이하 : " + totalScore + "점"); // 점수 : 29 이하
-          return grade = "D";
-          break;
+      if (totalScore >= 80 && totalScore <= 100 ){
+        console.log("점수 : 80 ~ 100 : " + totalScore + "점");
+        return grade = "A";
+      }else if (totalScore <= 79 && totalScore >= 60){
+        console.log("점수 : 60 ~ 79 : " + totalScore + "점");
+        return grade = "B";
+      }else if (totalScore <= 59 && totalScore >= 30){
+        console.log("점수 : 30 ~ 59 : " + totalScore + "점");
+        return grade = "C";
+      }else {
+        console.log("점수 : 29 이하 : " + totalScore + "점");
+        return grade = "D";
       }
     }
   }

@@ -1,7 +1,7 @@
 <template>
   <div>
     <!-- 질문 -->
-<!--    <h1 style="margin-bottom: 30px;">{{page}}. {{question}}</h1>-->
+    <h1 style="margin-bottom: 30px;">{{page}}. {{question}}</h1>
     <div id="testBtn-section" style="display: flex;">
       <!-- 답 선택 -->
       <TestButton
@@ -64,17 +64,13 @@ export default {
     makeResultMst(totalScore){
       let grade = '';
       if (totalScore >= 80 && totalScore <= 100 ){
-        console.log("점수 : 80 ~ 100 : " + totalScore + "점");
         return grade = "A";
       }else if (totalScore <= 79 && totalScore >= 60){
-        console.log("점수 : 60 ~ 79 : " + totalScore + "점");
         return grade = "B";
       }else if (totalScore <= 59 && totalScore >= 30){
-        console.log("점수 : 30 ~ 59 : " + totalScore + "점");
         return grade = "C";
       }else {
-        console.log("점수 : 29 이하 : " + totalScore + "점");
-        return grade = "D";
+        return grade = "F";
       }
     }
   }

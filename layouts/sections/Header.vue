@@ -18,26 +18,26 @@
           @click="isActive = !isActive"
         >
           <ul class="navbar-nav">
-            <li class="nav-item" text>
-              <n-link class="nav-link" nuxt to="/"> Test 시작하기 </n-link>
-            </li>
-            <li class="nav-item" text>
-              <n-link class="nav-link" nuxt to="/basic-components">
-                Basic Components
-              </n-link>
-            </li>
-            <li class="nav-item">
-              <!-- login-regiter -->
-              <v-btn
-                color="white"
-                nuxt
-                target="_blank"
-                href="/"
-                elevation="0"
-              >
-                로그인
-              </v-btn>
-            </li>
+<!--            <li class="nav-item" text>-->
+<!--              <n-link class="nav-link" nuxt to="/"> Test 시작하기 </n-link>-->
+<!--            </li>-->
+<!--            <li class="nav-item" text>-->
+<!--              <n-link class="nav-link" nuxt to="/basic-components">-->
+<!--                Basic Components-->
+<!--              </n-link>-->
+<!--            </li>-->
+<!--            <li class="nav-item">-->
+<!--              &lt;!&ndash; login-regiter &ndash;&gt;-->
+<!--              <v-btn-->
+<!--                color="white"-->
+<!--                nuxt-->
+<!--                target="_blank"-->
+<!--                href="/"-->
+<!--                elevation="0"-->
+<!--              >-->
+<!--                로그인-->
+<!--              </v-btn>-->
+<!--            </li>-->
           </ul>
         </div>
       </v-container>

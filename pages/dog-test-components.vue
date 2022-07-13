@@ -11,12 +11,17 @@
 
                         <!-- 인트로 페이지 -->
                         <main v-if="page===0">
-<!--                          <img src="/poster.jpeg" alt="해리포터" class="poster">-->
-<!--                          <h1 class="main-title">반려견 주인 자격 테스트</h1>-->
-                          <h5 class="sub-title">Pet Owner License Test</h5>
-                          <h5 class="">총 20개 문항으로 되어있어요~</h5>
-                          <h5 class="sub-title">한 번 진지하게 테스트 해보면 어떨까요?</h5>
-                          <TestButton text="시작" :clickEvent="startTest"/>
+                            <div style="text-align: center">
+                                <img src="/img/pets.png" class="poster" id="pets">
+                                <h1 class="main-title">반려견 주인 자격 테스트</h1>
+                                <h4 class="sub-title">Pet Owner License Test</h4>
+                            </div>
+                            <div style="margin-bottom: 30px;">
+                              <h3 class="">총 20개 문항으로 되어있어요~</h3>
+                              <h3 class="">재미로 해볼 순 있지만 정말 고민 중이라면</h3>
+                              <h3 class="">한 번 진지하게 테스트 해보면 어떨까요?</h3>
+                            </div>
+                            <TestButton text="시작" :clickEvent="startTest" class="intro-btn"/>
                         </main>
 
                         <!-- 질문 페이지 -->
@@ -86,5 +91,16 @@ export default {
         min-height: 600px;
         display: flex;
         align-items: center;
+    }
+
+    #pets{
+        width: 50%;
+        height: auto;
+    }
+
+    .intro-btn a{
+        width: 250px;
+        height: 50px;
+        margin: auto;
     }
 </style>

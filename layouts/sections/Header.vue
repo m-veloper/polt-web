@@ -8,7 +8,7 @@
         <!-- Logo -->
         <Logo />
         <v-spacer></v-spacer>
-        <v-btn class="d-block d-md-none" text @click="toggleClass()">
+        <v-btn class="d-block d-md-none" text @click="toggleClass()" style="background-color: #e7e7e7">
           <v-app-bar-nav-icon class="white--text" />
         </v-btn>
         <!-- Desktop view Navigation -->
@@ -26,18 +26,18 @@
 <!--                Basic Components-->
 <!--              </n-link>-->
 <!--            </li>-->
-<!--            <li class="nav-item">-->
-<!--              &lt;!&ndash; login-regiter &ndash;&gt;-->
-<!--              <v-btn-->
-<!--                color="white"-->
-<!--                nuxt-->
-<!--                target="_blank"-->
-<!--                href="/"-->
-<!--                elevation="0"-->
-<!--              >-->
-<!--                로그인-->
-<!--              </v-btn>-->
-<!--            </li>-->
+            <li class="nav-item">
+              <!-- login-regiter -->
+              <v-btn
+                color="white"
+                nuxt
+                target="_blank"
+                href="/"
+                elevation="0"
+              >
+                로그인
+              </v-btn>
+            </li>
           </ul>
         </div>
       </v-container>
@@ -69,9 +69,20 @@ export default {
 </script>
 
 <style>
-  .top-bar{
-    background: #fdbfa8;
-    height: 100px;
-  }
+    .top-bar {
+        /*background: #fdbfa8;*/
+        height: 87px;
+        border-bottom: 1px solid #bfbfbf;
+    }
+    @media (max-width: 767px) {
+      .navbar-nav{
+      /*  left: 200px !important;*/
+      /*  width: 150px !important;*/
+        background-color: unset !important;
+      }
+      .navbar-nav .nav-item{
+        margin: 10px;
+      }
+    }
 </style>
 

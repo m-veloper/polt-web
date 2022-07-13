@@ -1,10 +1,11 @@
 <template>
   <div>
     <!-- 질문 -->
-    <h1 style="margin-bottom: 30px;">{{page}}. {{question}}</h1>
+<!--    <h1 class="question-title" style="margin-bottom: 30px;">{{page}}. {{question}}</h1>-->
+    <h1 class="question-title" style="margin-bottom: 30px;" v-html="question"></h1>
     <div id="testBtn-section" style="display: flex;">
       <!-- 답 선택 -->
-      <TestButton
+      <TestButton class="question-btn"
               v-for="(item, index) in answers"
               styleType="blue"
               :key="index"
@@ -78,18 +79,30 @@ export default {
 </script>
 
 <style>
-  h1 {
-    font-size: 1.5rem;
+  .question-title {
+    font-size: 1.3rem;
+  }
+  #testBtn-section{
+    justify-content: center;
+  }
+  #testBtn-section .select-section a {
+    width: 250px;
+    height: 65px;
   }
 
   @media (max-width: 991px) {
     #testBtn-section {
       flex-direction: column;
       justify-content: space-between
+
     }
 
     #testBtn-section .select-section {
       margin-bottom: 35px;
+    }
+
+    .question-title {
+      font-size: 1.3rem;
     }
   }
 </style>

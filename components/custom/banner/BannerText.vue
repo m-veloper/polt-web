@@ -8,13 +8,9 @@
         <v-row justify="center">
           <v-col cols="12" sm="10" md="9" lg="7">
             <div class="text-center">
-              <h2 class="ui-title font-weight-bold">나는 지금 반려동물을 키워도 되는 걸까?</h2>
-              <p>
-                막상 키우고 싶은데, 고민이 되신 적 있으신가요?
-              </p>
-              <v-img
-                :src="require('@/assets/images/banner/banner-main-01.png')"
-              />
+              <h3 class="ui-title font-weight-bold main-title">나는 지금 반려동물을 키워도 되는 걸까?</h3>
+              <p>막상 키우고 싶은데, 고민이 되신 적 있으신가요?</p>
+              <v-img :src="require('@/assets/images/banner/banner-main-01.png')" style="width: 90%; margin: auto"/>
             </div>
           </v-col>
         </v-row>
@@ -22,7 +18,7 @@
         <div class="mt-16 pt-2 text-center">
           <div style="display: flex; justify-content: center">
             <n-link nuxt to="/dog-test-components" class="nav-link ButtonGeneral DefaultHomeHead__btn ButtonGeneral__white button3d">
-              <span>반려견 테스트</span>
+              <span>반려견 주인자격 테스트</span>
             </n-link>
 <!--            <n-link class="nav-link ButtonGeneral DefaultHomeHead__btn ButtonGeneral__white button3d" nuxt to="/">-->
 <!--              <span>반려묘 테스트</span>-->
@@ -45,9 +41,15 @@ export default {
 </script>
 
 <style>
+  .mini-spacer{
+    padding: 10px 0 !important;
+  }
+  .main-title{
+    font-size: 2rem;
+  }
   .button3d {
-    width: 300px;
-    height: 65px;
+    width: 250px;
+    height: 50px;
   }
 
   .ButtonGeneral * {
@@ -63,8 +65,6 @@ export default {
     align-items: center;
     justify-content: center;
     padding: 1.3rem 2.8rem;
-    font-size: 1rem;
-    font-weight: bold;
     border: none;
     border-radius: 1.2rem;
     outline: transparent;
@@ -81,18 +81,21 @@ export default {
     display: block;
     width: 100%;
     height: 100%;
-    top: -0.6rem;
+    /*top: -0.6rem;*/
+    top: -0.45rem;
     left: 0;
     border-radius: 1.2rem;
     content: "";
   }
 
   .ButtonGeneral:hover:before {
-    top: -.4rem
+    top: -.25rem
   }
 
   .ButtonGeneral span {
     color: #ffffff;
+    font-size: 0.9rem;
+    font-weight: bold;
     -webkit-transition: transform .1s ease-out;
     transition: transform .1s ease-out
   }
@@ -103,11 +106,11 @@ export default {
   }
 
   .ButtonGeneral__white {
-    background-color: #ba9ae1;
+    background-color: #c12743;
   }
 
   .ButtonGeneral__white:before {
-    background-color: #ff4d7e;
+    background-color: #ff385c;
   }
 
 </style>

@@ -1,6 +1,6 @@
 <template>
   <div class="select-section">
-      <a :class="[styleType]" class="ButtonGeneral DefaultHomeHead__btn ButtonGeneral__white button3d"  @click.prevent="clickEvent">
+      <a :class="[styleType]" class="ButtonGeneral DefaultHomeHead__btn ButtonGeneral__white"  @click.prevent="clickEvent">
         <span v-html="text"></span>
       </a>
   </div>

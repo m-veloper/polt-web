@@ -98,11 +98,20 @@ export default {
     }
 
     #testBtn-section .select-section {
-      margin-bottom: 35px;
+      margin: 15px auto;
     }
 
     .question-title {
       font-size: 1.3rem;
+    }
+  }
+
+  @media (max-width: 540px) {
+    #testBtn-section .select-section{
+      margin: 15px auto;
+    }
+    .question-title {
+      font-size: 1rem;
     }
   }
 </style>

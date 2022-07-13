@@ -8,7 +8,7 @@
         <!-- Logo -->
         <Logo />
         <v-spacer></v-spacer>
-        <v-btn class="d-block d-md-none" text @click="toggleClass()" style="background-color: #e7e7e7">
+        <v-btn class="d-block d-md-none header-toggle-btn" text @click="toggleClass()" style="background-color: #e7e7e7">
           <v-app-bar-nav-icon class="white--text" />
         </v-btn>
         <!-- Desktop view Navigation -->
@@ -74,6 +74,11 @@ export default {
         height: 87px;
         border-bottom: 1px solid #bfbfbf;
     }
+    .header-toggle-btn{
+        min-width: unset !important;
+        width: 50px;
+    }
+
     @media (max-width: 767px) {
       .navbar-nav{
       /*  left: 200px !important;*/
@@ -83,6 +88,12 @@ export default {
       .navbar-nav .nav-item{
         margin: 10px;
       }
+      .fill-height{
+          padding-right: 0 !important;
+          padding-left: 0 !important;
+      }
     }
+
+
 </style>
 

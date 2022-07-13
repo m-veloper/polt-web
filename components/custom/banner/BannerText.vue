@@ -113,4 +113,11 @@ export default {
     background-color: #ff385c;
   }
 
+  @media (max-width: 540px) {
+    .main-title{
+      font-size: 1.7rem;
+    }
+
+  }
+
 </style>

@@ -117,7 +117,12 @@ export default {
     .main-title{
       font-size: 1.7rem;
     }
+  }
 
+  @media (max-width: 455px) {
+    .main-title{
+      font-size: 1.4rem;
+    }
   }
 
 </style>

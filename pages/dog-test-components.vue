@@ -73,6 +73,14 @@ export default {
     startTest() {
       this.$store.commit("SET_PAGE", 1)
     }
+  },
+  beforeRouteLeave(to, from, next) {
+    if (confirm('진행 테스트가 초기화 됩니다.\n변경사항이 저장되지 않을 수 있습니다.')) {
+      this.$router.go(0);
+    }
+    // console.log(to)
+    // console.log(from)
+    // console.log(next)
   }
 };
 </script>

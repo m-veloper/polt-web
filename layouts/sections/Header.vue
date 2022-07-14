@@ -80,20 +80,38 @@ export default {
     }
 
     @media (max-width: 767px) {
-      .navbar-nav{
-      /*  left: 200px !important;*/
-      /*  width: 150px !important;*/
-        background-color: unset !important;
-      }
-      .navbar-nav .nav-item{
-        margin: 10px;
-      }
-      .fill-height{
-          padding-right: 0 !important;
-          padding-left: 0 !important;
-      }
+        .navbar-nav {
+            /*  left: 200px !important;*/
+            /*  width: 150px !important;*/
+            background-color: unset !important;
+        }
+
+        .navbar-nav .nav-item {
+            margin: 10px;
+        }
+
+        .fill-height {
+            padding-right: 0 !important;
+            padding-left: 0 !important;
+        }
+
+        .header-toggle-btn {
+            width: 30px;
+            height: 30px !important;
+            padding: 0 !important;
+        }
+
+        .header-toggle-btn > span > button {
+            width: 30px !important;
+            height: 30px !important;
+        }
+
+        .header-toggle-btn i {
+            font-size: 18px !important;
+        }
+        /*.hamburger-toggle-icon{*/
+        /*    font-size: 18px;*/
+        /*}*/
     }
-
-
 </style>
 

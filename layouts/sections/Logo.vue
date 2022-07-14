@@ -37,4 +37,17 @@ export default {
         height: auto;
         margin-right: 7px;
     }
+
+    @media (max-width: 767px) {
+        .logo a h1{
+            color: #ff385c;
+            font-size: 1.5rem;
+        }
+        .logo img{
+            width: 27px;
+            height: auto;
+            margin-right: 7px;
+        }
+    }
+
 </style>

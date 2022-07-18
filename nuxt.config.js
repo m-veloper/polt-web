@@ -9,6 +9,20 @@ export default {
     htmlAttrs: {
       lang: "kr"
     },
+    script: [
+      { hid: 'gtm-script1', src: 'https://www.googletagmanager.com/gtag/js?id=G-8RDSXVYHQK', defer: true },
+      {
+        hid: 'gtm-script2',
+        innerHTML: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-8RDSXVYHQK');
+        `,
+        type: 'text/javascript',
+        charset: 'utf-8'
+      }
+    ],
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },

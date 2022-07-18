@@ -9,6 +9,7 @@ export default {
     htmlAttrs: {
       lang: "kr"
     },
+    __dangerouslyDisableSanitizers: ['script'],
     script: [
       { hid: 'gtm-script1', src: 'https://www.googletagmanager.com/gtag/js?id=G-8RDSXVYHQK', defer: true },
       {

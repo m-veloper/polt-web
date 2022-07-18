@@ -19,7 +19,12 @@ export default {
           hid: "description",
           name: "NuxtJs UI kit",
           content: "NuxtJs UI kit is the best way"
-        }
+        },
+        {
+          hid: "description",
+          name: "google-site-verification",
+          content: "bhftwUN-sNJPCoVdDuFhLq-YPUCLkweKu3FVrdMwrXc"
+        },
       ]
     };
   },

@@ -38,7 +38,8 @@ export default {
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
     // https://go.nuxtjs.dev/vuetify
-    "@nuxtjs/vuetify"
+    "@nuxtjs/vuetify",
+    '@nuxtjs/google-analytics',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -55,5 +56,13 @@ export default {
   },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
-  build: {}
+  build: {},
+
+  /**
+   * 구글 애널리틱스 추가
+   * https://google-analytics.nuxtjs.org/setup
+   */
+  googleAnalytics: {
+    id: 'G-8RDSXVYHQK'
+  }
 };

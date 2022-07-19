@@ -44,6 +44,7 @@ export default {
     continuous: true,
     duration: 3000
   },
+  // loading: '~/components/Loading.vue',
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     // { src: '~plugins/ga.js', ssr: false }

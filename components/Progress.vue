@@ -30,11 +30,13 @@ export default {
   }
   .progress-outline{
     border: 1px solid;
+    border-radius: 5px;
+
   }
   .gauge {
     /*margin-top: 10px;*/
     height: 10px;
-    background: rgb(99, 99, 202);
+    background: #ff385c;
     box-shadow: 0 0 10px #b11515;
     border-radius: 5px;
   }

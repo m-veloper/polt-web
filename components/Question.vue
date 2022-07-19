@@ -1,8 +1,10 @@
 <template>
   <div>
-    <!-- 질문 -->
-<!--    <h1 class="question-title" style="margin-bottom: 30px;">{{page}}. {{question}}</h1>-->
-    <h1 class="question-title" style="margin-bottom: 30px;" v-html="question"></h1>
+    <div style="height: 100px;">
+      <!-- 질문 -->
+  <!--    <h1 class="question-title" style="margin-bottom: 30px;">{{page}}. {{question}}</h1>-->
+      <h1 class="question-title" style="margin-bottom: 30px;" v-html="question"></h1>
+    </div>
     <div id="testBtn-section" style="display: flex;">
       <!-- 답 선택 -->
       <TestButton class="question-btn"
@@ -86,8 +88,8 @@ export default {
     justify-content: center;
   }
   #testBtn-section .select-section a {
-    width: 250px;
-    height: 65px;
+    width: 270px;
+    height: 85px;
   }
 
   @media (max-width: 991px) {

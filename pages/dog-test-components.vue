@@ -7,7 +7,7 @@
                 ----------------------------------------------- -->
               <v-row justify="center">
                   <v-col cols="12" md="7" lg="6" class="d-flex align-center" style="justify-content: center">
-                      <div class="text-center text-md-left">
+                      <div class="text-center text-md-left dog-component">
 
                         <!-- 인트로 페이지 -->
                         <main v-if="page===0">
@@ -110,5 +110,11 @@ export default {
         width: 250px;
         height: 50px;
         margin: auto;
+    }
+
+    @media (max-width: 540px) {
+        .dog-component{
+            width: 100%;
+        }
     }
 </style>

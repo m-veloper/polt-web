@@ -46,7 +46,7 @@ export default {
   },
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
-    { src: '~plugins/ga.js', ssr: false }
+    // { src: '~plugins/ga.js', ssr: false }
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -74,12 +74,4 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
-
-  /**
-   * 구글 애널리틱스 추가
-   * https://google-analytics.nuxtjs.org/setup
-   */
-  // googleAnalytics: {
-  //   id: 'G-8RDSXVYHQK'
-  // }
 };

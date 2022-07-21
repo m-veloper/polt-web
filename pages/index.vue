@@ -29,7 +29,7 @@
 export default {
   head() {
     return {
-      title: "Polt | Pet Owner License Test",
+      title: "Polt | 반려동물 주인 자격 테스트",
       meta: [
         {
           hid: "description",

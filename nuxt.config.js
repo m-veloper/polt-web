@@ -4,8 +4,8 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    titleTemplate: "%s - Nuxt js UI Kit",
-    title: "POLT | Pet-Owner-License-Test",
+    titleTemplate: "%s - Pet Owner License Test",
+    title: "Polt | 반려동물 주인자격 테스트 ",
     htmlAttrs: {
       lang: "kr"
     },
@@ -27,11 +27,11 @@ export default {
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { hid: "description", name: "description", content: "" },
+      { hid: "description", name: "description", content: "반려동물 주인자격 테스트 | Pet Owner License Test" },
       { name: "format-detection", content: "telephone=no" },
       { name: "google-site-verification", content: "bhftwUN-sNJPCoVdDuFhLq-YPUCLkweKu3FVrdMwrXc"}
     ],
-    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
+    link: [{ rel: "icon", type: "image/x-icon", href: "/img/favicon.ico" }]
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css

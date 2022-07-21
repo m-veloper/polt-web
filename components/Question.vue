@@ -83,6 +83,7 @@ export default {
 <style>
   .question-title {
     font-size: 1.3rem;
+    font-family: BMDOHYEON;
   }
   #testBtn-section{
     justify-content: center;

@@ -9,7 +9,7 @@
           <v-col cols="12" sm="10" md="9" lg="7">
             <div class="text-center">
               <h3 class="ui-title font-weight-bold main-title">나는 지금 반려동물을 키워도 되는 걸까?</h3>
-              <p>막상 키우고 싶은데, 고민이 되신 적 있으신가요?</p>
+              <p class="sub-title">막상 키우고 싶은데, 고민이 되신 적 있으신가요?</p>
               <v-img :src="require('@/assets/images/banner/banner-main-01.png')" style="width: 90%; margin: auto"/>
             </div>
           </v-col>
@@ -45,8 +45,14 @@ export default {
     padding: 10px 0 !important;
   }
   .main-title{
+    font-family: BMDOHYEON;
     font-size: 2rem;
   }
+
+  .sub-title{
+    font-family: BMDOHYEON;
+  }
+
   .button3d {
     width: 250px;
     height: 50px;
